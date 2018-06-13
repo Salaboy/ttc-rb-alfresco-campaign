@@ -5,7 +5,7 @@ metadata:
   labels:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
     type: campaign
-    campaign.name: activiti
+    campaign.name: alfresco 
     campaign.lang: en
 {{- if .Values.service.annotations }}
   annotations:
