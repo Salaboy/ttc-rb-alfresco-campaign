@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.activiti.cloud.examples</groupId>
-  <artifactId>rb-english-campaign</artifactId>
+  <artifactId>rb-alfresco-campaign</artifactId>
 	<version>1.0-SNAPSHOT</version>
-  <name>Activiti Cloud :: Twitter Campaign (English)</name>
+  <name>Activiti Cloud :: Alfresco (English)</name>
   <properties>
     <java.version>1.8</java.version>
     <activiti.cloud.version>7-201803-EA-SNAPSHOT</activiti.cloud.version>
