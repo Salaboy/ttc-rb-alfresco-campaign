@@ -49,7 +49,7 @@ spec:
 #        - name: ACT_RB_DB_PLATFORM
 #          value: {{ default "org.hibernate.dialect.PostgreSQLDialect" .Values.db.platform }}
         - name: CAMPAIGN_TOPIC
-          value: {{ default "activiti" .Values.global.campaign }}
+          value: {{ default "alfresco" .Values.global.campaign }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: {{ .Values.service.internalPort }}
