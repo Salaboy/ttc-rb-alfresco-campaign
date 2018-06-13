@@ -4,7 +4,7 @@ pipeline {
     }
     environment {
       ORG               = 'jenkinsx'
-      APP_NAME          = 'ttc-rb-english-campaign'
+      APP_NAME          = 'ttc-rb-alfresco-campaign'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
     }
     stages {
@@ -47,7 +47,7 @@ pipeline {
             sh "echo \$(jx-release-version) > VERSION"
             sh "mvn versions:set -DnewVersion=\$(cat VERSION)"
           }
-          dir ('./charts/ttc-rb-english-campaign') {
+          dir ('./charts/ttc-rb-alfresco-campaign') {
             container('maven') {
               sh "make tag"
             }
@@ -64,7 +64,7 @@ pipeline {
           branch 'develop'
         }
         steps {
-          dir ('./charts/ttc-rb-english-campaign') {
+          dir ('./charts/ttc-rb-alfresco-campaign') {
             container('maven') {
               sh 'jx step changelog --version v\$(cat ../../VERSION)'
               // release the helm chart
@@ -82,8 +82,8 @@ pipeline {
             cleanWs()
         }
         failure {
-            input """Pipeline failed. 
-We will keep the build pod around to help you diagnose any failures. 
+            input """Pipeline failed.
+We will keep the build pod around to help you diagnose any failures.
 
 Select Proceed or Abort to terminate the build pod"""
         }

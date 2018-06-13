@@ -1,6 +1,6 @@
 CHART_REPO := http://jenkins-x-chartmuseum:8080
 CURRENT=$(pwd)
-NAME := ttc-rb-english-campaign
+NAME := ttc-rb-alfresco-campaign
 OS := $(shell uname)
 RELEASE_VERSION := $(shell cat ../../VERSION)
 

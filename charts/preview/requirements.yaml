@@ -9,5 +9,5 @@ dependencies:
   repository: https://chartmuseum.build.cd.jenkins-x.io
   version: 2.3.56
 - alias: preview
-  name: ttc-rb-english-campaign
-  repository: file://../ttc-rb-english-campaign
+  name: ttc-rb-alfresco-campaign
+  repository: file://../ttc-rb-alfresco-campaign
